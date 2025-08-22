@@ -1,0 +1,4 @@
+[tools]
+node = "lts"
+go = "1.25.0"
+"ubi:gohugoio/hugo[matching=extended_withdeploy]" = "0.148.2"
