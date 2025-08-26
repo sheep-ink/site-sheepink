@@ -1,0 +1,6 @@
+[[mounts]]
+  source = "content"
+  target = "content"
+[[mounts]]
+  source = "static"
+  target = "static"
