@@ -5,3 +5,11 @@ command = "./build.sh"
 [assets]
 directory = "./public"
 not_found_handling = "404-page"
+[vars]
+HUGO_ENV = "production"
+HUGO_ENVIRONMENT = "production"
+GO_VERSION = "1.24.3"
+[env.production.vars]
+HUGO_ENV = "production"
+HUGO_ENVIRONMENT = "production"
+GO_VERSION = "1.24.3"
