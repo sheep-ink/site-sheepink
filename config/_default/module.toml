@@ -1,9 +1,9 @@
 [[mounts]]
-  source = "/home/sheepink/works/contents/sheepink"
-  target = "content"
-[[mounts]]
   source = "/home/sheepink/works/media/sheepink"
   target = "static"
 [[mounts]]
   source = "static"
   target = "static"
+[[mounts]]
+  source = "/home/sheepink/works/contents/sheepink"
+  target = "content"
