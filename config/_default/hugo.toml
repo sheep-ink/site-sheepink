@@ -1,0 +1,19 @@
+baseURL = 'https://sheep.ink/'
+languageCode = 'ja-jp'
+title = '羊インク'
+
+[menus]
+  [[menus.main]]
+    name = 'Home'
+    pageRef = '/'
+    weight = 10
+
+  [[menus.main]]
+    name = 'Posts'
+    pageRef = '/posts'
+    weight = 20
+
+  [[menus.main]]
+    name = 'Tags'
+    pageRef = '/tags'
+    weight = 30
