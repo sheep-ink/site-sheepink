@@ -1,0 +1,7 @@
+name = "sheepink-hugo-worker"
+compatibility_date = "2025-08-26"
+[build]
+command = "./build.sh"
+[assets]
+directory = "./public"
+not_found_handling = "404-page"
