@@ -6,6 +6,10 @@ HUGO_VERSION=0.148.2
 # タイムゾーン設定（Cloudflare Workers推奨）
 export TZ=UTC
 
+# Hugo環境変数を明示的に設定
+export HUGO_ENV=production
+export HUGO_ENVIRONMENT=production
+
 # Hugo Extended のインストール
 echo "Installing Hugo Extended ${HUGO_VERSION}..."
 curl -sLJO "https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.tar.gz"
@@ -36,8 +40,8 @@ hugo mod tidy
 echo "Verifying installations..."
 echo "Hugo: $(hugo version)"
 
-# Hugoビルド（GCおよびminify）
+# Hugoビルド（プロダクション環境でGC）
 echo "Building Hugo site..."
-hugo --gc
+hugo --environment=production --gc
 
 echo "Build completed successfully!"
