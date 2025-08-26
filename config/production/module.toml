@@ -1,6 +1,9 @@
 [[mounts]]
-  source = "content"
-  target = "content"
-[[mounts]]
   source = "static"
   target = "static"
+
+[[imports]]
+path = "github.com/sheep-ink/content-sheepink"
+  [[imports.mounts]]
+    source = "content"
+    target = "content"
