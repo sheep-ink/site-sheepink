@@ -1,7 +1,14 @@
 name = "sheepink-hugo-worker"
 compatibility_date = "2025-08-26"
+main = "index.js"
+[[routes]]
+pattern = "sheep.ink"
+custom_domain = true
 [build]
 command = "./build.sh"
 [assets]
 directory = "./public"
 not_found_handling = "404-page"
+[[r2_buckets]]
+binding = "IMAGES"
+bucket_name = "sheepink-images"
