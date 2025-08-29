@@ -2,3 +2,4 @@ node_modules/
 *.code-workspace
 .hugo_build.lock
 public
+.wrangler/
