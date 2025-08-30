@@ -2,3 +2,15 @@
 node = "lts"
 go = "1.25.0"
 "ubi:gohugoio/hugo[matching=extended_withdeploy]" = "0.148.2"
+[tasks.sync_r2]
+description = "R2にメディア同期"
+run = """
+rclone sync "/home/sheepink/works/media/sheepink" "sync-sheepink-r2:sheepink-images" --include="*/" --include="*.webp" --progress --stats=30s
+"""
+[tasks.deploy_wrangler]
+description = "Workersをデプロイ"
+dir = "/home/sheepink/works/projects/sheepink"
+run = "npx wrangler deploy"
+[tasks.release]
+description = "メディア同期とWorkersデプロイ"
+depends = ["sync_r2", "deploy_wrangler"]
