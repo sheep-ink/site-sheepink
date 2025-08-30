@@ -5,5 +5,6 @@
   source = "static"
   target = "static"
 [[mounts]]
-  source = "/home/sheepink/works/contents/sheepink/content"
+  source = "/home/sheepink/works/contents/sheepink"
   target = "content"
+  excludeFiles = ["*.code-workspace"]
