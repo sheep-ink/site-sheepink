@@ -7,6 +7,7 @@ custom_domain = true
 [build]
 command = "./build.sh"
 [assets]
+binding = "ASSETS"
 directory = "./public"
 not_found_handling = "404-page"
 [[r2_buckets]]
