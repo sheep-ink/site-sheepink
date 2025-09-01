@@ -1,7 +1,6 @@
 [tools]
 node = "lts"
-go = "1.25.0"
-"ubi:gohugoio/hugo[matching=extended_withdeploy]" = "0.148.2"
+"ubi:gohugoio/hugo[matching=extended_withdeploy]" = "0.149.0"
 [tasks.sync_r2]
 description = "R2にメディア同期"
 run = """
