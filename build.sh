@@ -9,5 +9,6 @@ rm -rf public/* public/.??*
 
 # Hugoビルド
 echo "🏗️ビルドしています..."
-hugo --gc
+HUGO_MINIFY_TDEWOLFF_HTML_KEEPCOMMENTS=true HUGO_ENABLEMISSINGTRANSLATIONPLACEHOLDERS=true hugo --gc
+grep -inorE "<\!-- raw HTML omitted -->|ZgotmplZ|\[i18n\]|\(<nil>\)|(&lt;nil&gt;)|hahahugo" public/ || true
 echo "🏰ビルド成功しました!"
