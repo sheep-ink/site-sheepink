@@ -4,7 +4,7 @@ node = "lts"
 [tasks.sync_r2]
 description = "R2にメディア同期"
 run = """
-rclone sync "/home/sheepink/works/media/sheepink" "sync-sheepink-r2:sheepink-images" --include="*/" --include="*.webp" --progress --stats=30s
+rclone sync "/home/sheepink/works/media/sheepink" "sync-sheepink-r2:sheepink-media" --include="*/" --include="*.webp" --progress --stats=30s
 """
 [tasks.deploy_wrangler]
 description = "Workersをデプロイ"

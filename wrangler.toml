@@ -12,4 +12,4 @@ directory = "./public"
 not_found_handling = "404-page"
 [[r2_buckets]]
 binding = "IMAGES"
-bucket_name = "sheepink-images"
+bucket_name = "sheepink-media"
