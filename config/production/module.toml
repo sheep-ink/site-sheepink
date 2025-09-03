@@ -5,3 +5,7 @@
   source = "/home/sheepink/works/contents/sheepink"
   target = "content"
   excludeFiles = ["*.code-workspace"]
+[[mounts]]
+  source = "/home/sheepink/works/data/sheepink"
+  target = "data"
+  excludeFiles = ["*.code-workspace"]
