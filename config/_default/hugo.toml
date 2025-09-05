@@ -1,6 +1,7 @@
 baseURL = 'https://sheep.ink/'
 languageCode = 'ja-jp'
 title = '羊インク'
+disableHugoGeneratorInject = true
 
 [menus]
   [[menus.main]]
