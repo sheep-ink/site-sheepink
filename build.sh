@@ -11,4 +11,7 @@ rm -rf public/* public/.??*
 echo "🏗️ビルドしています..."
 HUGO_MINIFY_TDEWOLFF_HTML_KEEPCOMMENTS=true HUGO_ENABLEMISSINGTRANSLATIONPLACEHOLDERS=true hugo --gc
 grep -inorE "<\!-- raw HTML omitted -->|ZgotmplZ|\[i18n\]|\(<nil>\)|(&lt;nil&gt;)|hahahugo" public/ || true
+
+# Prettierで整形
+npx prettier --ignore-path .prettierignore --write "public/**/*.html"
 echo "🏰ビルド成功しました!"
