@@ -8,7 +8,7 @@ rclone sync "/home/sheepink/works/media/sheepink" "sync-sheepink-r2:sheepink-med
 """
 [tasks.deploy_wrangler]
 description = "Workersをデプロイ"
-dir = "/home/sheepink/works/projects/sheepink"
+dir = "/home/sheepink/works/projects/sheepink/production"
 run = "npx wrangler deploy"
 [tasks.release]
 description = "メディア同期とWorkersデプロイ"
